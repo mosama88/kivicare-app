@@ -1,11 +1,23 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\WebSite\HomeConterller;
 
-Route::get('/', function () {
-    return view('website.index');
+
+
+Route::middleware('web')->name('home')->group(function () {
+    Route::get('/', [HomeConterller::class, 'index'])->name('index');
+
+    //Language
+    Route::get('change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
 });
+
+
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -17,4 +29,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__ . '/auth.php';
+// require __DIR__ . '/auth.php';
