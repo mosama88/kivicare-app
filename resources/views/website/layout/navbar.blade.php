@@ -4,8 +4,7 @@
             <div class="d-flex gap-3 gap-xl-0 align-items-center">
                 <div>
                     <button data-trigger="navbar_main"
-                        class="d-xl-none btn btn-primary rounded-pill p-1 pt-0 toggle-rounded-btn"
-                        type="button">
+                        class="d-xl-none btn btn-primary rounded-pill p-1 pt-0 toggle-rounded-btn" type="button">
                         <svg width="20px" class="icon-20" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z">
@@ -39,28 +38,27 @@
                         <div class="offcanvas-header px-0">
                             <a href="{{ asset('website') }}/index.html" class="navbar-brand m-0">
                                 <span class="logo-normal">
-                                    <img src="{{ asset('website') }}/assets/images/logo/logo-skyblue.png"
-                                        alt="logo" class="img-fluid" loading="lazy">
+                                    <img src="{{ asset('website') }}/assets/images/logo/logo-skyblue.png" alt="logo"
+                                        class="img-fluid" loading="lazy">
                                 </span>
                             </a>
                             <button class="btn-close float-end px-3"></button>
                         </div>
                         <ul class="navbar-nav iq-nav-menu  list-unstyled" id="header-menu">
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#homePages"
-                                    role="button" aria-expanded="false" aria-controls="homePages">
-                                    <span class="item-name">Home</span>
+                                <a class="nav-link" data-bs-toggle="collapse" href="#homePages" role="button"
+                                    aria-expanded="false" aria-controls="homePages">
+                                    <span class="item-name">{{ __('navbar.home') }}</span>
                                     <span class="menu-icon">
-                                        <svg width="8" height="9" viewBox="0 0 8 9"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V4H7.5C7.77614 4 8 4.22386 8 4.5C8 4.77614 7.77614 5 7.5 5H4.5V8C4.5 8.27614 4.27614 8.5 4 8.5C3.72386 8.5 3.5 8.27614 3.5 8V5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H3.5V1C3.5 0.723858 3.72386 0.5 4 0.5Z"
                                                 fill="currentColor" />
                                         </svg>
                                     </span>
                                 </a>
-                                <ul class="sub-nav mega-menu-item collapse list-unstyled"
-                                    id="homePages">
+                                <ul class="sub-nav mega-menu-item collapse list-unstyled" id="homePages">
                                     <li class="nav-item">
                                         <a class="nav-link " href="{{ asset('website') }}/index.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-01.webp"
@@ -70,24 +68,21 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active"
-                                            href="{{ asset('website') }}/dentist.html">
+                                        <a class="nav-link active" href="{{ asset('website') }}/dentist.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-02.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">dentist</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/eye-care.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/eye-care.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-03.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">eye care</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/skin-specialist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/skin-specialist.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-04.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3"> skin
@@ -95,8 +90,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/fertility-clinic.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/fertility-clinic.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-05.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">Fertility
@@ -104,8 +98,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/ent-clinic.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/ent-clinic.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-06.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3"> ent
@@ -113,8 +106,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/product-home.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/product-home.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-07.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">Product
@@ -122,8 +114,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/psychiatrist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/psychiatrist.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-08.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">
@@ -131,34 +122,28 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/paediatrician.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/paediatrician.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-09.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
-                                            <span
-                                                class="d-inline-block mt-0 mt-xl-3">Paediatrician</span>
+                                            <span class="d-inline-block mt-0 mt-xl-3">Paediatrician</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/cardiac.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/cardiac.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-10.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">Cardiac</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/orthopedics.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/orthopedics.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-11.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
-                                            <span
-                                                class="d-inline-block mt-0 mt-xl-3">Orthopedics</span>
+                                            <span class="d-inline-block mt-0 mt-xl-3">Orthopedics</span>
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/laboratory.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/laboratory.html">
                                             <img src="{{ asset('website') }}/assets/images/mega/home-12.webp"
                                                 alt="img" class="img-fluid d-xl-block d-none">
                                             <span class="d-inline-block mt-0 mt-xl-3">Laboratory</span>
@@ -167,12 +152,12 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#allPages"
-                                    role="button" aria-expanded="false" aria-controls="allPages">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#allPages" role="button"
+                                    aria-expanded="false" aria-controls="allPages">
                                     <span class="item-name">Pages</span>
                                     <span class="menu-icon">
-                                        <svg width="8" height="9" viewBox="0 0 8 9"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V4H7.5C7.77614 4 8 4.22386 8 4.5C8 4.77614 7.77614 5 7.5 5H4.5V8C4.5 8.27614 4.27614 8.5 4 8.5C3.72386 8.5 3.5 8.27614 3.5 8V5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H3.5V1C3.5 0.723858 3.72386 0.5 4 0.5Z"
                                                 fill="currentColor" />
@@ -181,17 +166,14 @@
                                 </a>
                                 <ul class="sub-nav collapse  list-unstyled" id="allPages">
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#docPages" role="button" aria-expanded="false"
-                                            aria-controls="docPages">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#docPages"
+                                            role="button" aria-expanded="false" aria-controls="docPages">
                                             <span class="item-name">Doctors</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -219,23 +201,19 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/about-us.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/about-us.html">
                                             about-us
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#pageServices" role="button" aria-expanded="false"
-                                            aria-controls="pageServices">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#pageServices"
+                                            role="button" aria-expanded="false" aria-controls="pageServices">
                                             <span class="item-name">Service</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -243,37 +221,31 @@
                                         </a>
                                         <ul class="sub-nav collapse  list-unstyled" id="pageServices">
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/service1.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/service1.html">
                                                     service 1
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/service2.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/service2.html">
                                                     service 2
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/client.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/client.html">
                                             client
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#pricingPlan" role="button" aria-expanded="false"
-                                            aria-controls="pricingPlan">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#pricingPlan"
+                                            role="button" aria-expanded="false" aria-controls="pricingPlan">
                                             <span class="item-name">Pricing Plan</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -305,27 +277,24 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/contactus.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/contactus.html">
                                             contact us
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/comingsoon.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/comingsoon.html">
                                             coming soon
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse"
-                                    href="#specializationPages" role="button" aria-expanded="false"
-                                    aria-controls="specializationPages">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#specializationPages"
+                                    role="button" aria-expanded="false" aria-controls="specializationPages">
                                     <span class="item-name">Specialization</span>
                                     <span class="menu-icon">
-                                        <svg width="8" height="9" viewBox="0 0 8 9"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V4H7.5C7.77614 4 8 4.22386 8 4.5C8 4.77614 7.77614 5 7.5 5H4.5V8C4.5 8.27614 4.27614 8.5 4 8.5C3.72386 8.5 3.5 8.27614 3.5 8V5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H3.5V1C3.5 0.723858 3.72386 0.5 4 0.5Z"
                                                 fill="currentColor" />
@@ -334,50 +303,44 @@
                                 </a>
                                 <ul class="sub-nav collapse  list-unstyled" id="specializationPages">
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/oncologist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/oncologist.html">
                                             oncologist
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/neurologist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/neurologist.html">
                                             neurologist
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/ent-specialist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/ent-specialist.html">
                                             ent specialist
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/cardiologist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/cardiologist.html">
                                             cardiologist
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/audiologist.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/audiologist.html">
                                             audiologist
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/psychiatrists.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/psychiatrists.html">
                                             psychiatrists
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#blogPages"
-                                    role="button" aria-expanded="false" aria-controls="blogPages">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#blogPages" role="button"
+                                    aria-expanded="false" aria-controls="blogPages">
                                     <span class="item-name">Blog</span>
                                     <span class="menu-icon">
-                                        <svg width="8" height="9" viewBox="0 0 8 9"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V4H7.5C7.77614 4 8 4.22386 8 4.5C8 4.77614 7.77614 5 7.5 5H4.5V8C4.5 8.27614 4.27614 8.5 4 8.5C3.72386 8.5 3.5 8.27614 3.5 8V5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H3.5V1C3.5 0.723858 3.72386 0.5 4 0.5Z"
                                                 fill="currentColor" />
@@ -386,29 +349,24 @@
                                 </a>
                                 <ul class="sub-nav collapse  list-unstyled" id="blogPages">
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/blog-lists.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/blog-lists.html">
                                             Blog Listing
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link "
-                                            href="{{ asset('website') }}/blog-masonry.html">
+                                        <a class="nav-link " href="{{ asset('website') }}/blog-masonry.html">
                                             blog masonry
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#blogGrid" role="button" aria-expanded="false"
-                                            aria-controls="blogGrid">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#blogGrid"
+                                            role="button" aria-expanded="false" aria-controls="blogGrid">
                                             <span class="item-name">Blog Grid</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -442,17 +400,14 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#blogSidebar" role="button" aria-expanded="false"
-                                            aria-controls="blogSidebar">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#blogSidebar"
+                                            role="button" aria-expanded="false" aria-controls="blogSidebar">
                                             <span class="item-name">Blog Sidebar</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -486,17 +441,14 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#blogSingle" role="button" aria-expanded="false"
-                                            aria-controls="docPages">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#blogSingle"
+                                            role="button" aria-expanded="false" aria-controls="docPages">
                                             <span class="item-name">Blog Single</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -510,32 +462,27 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/blog-video.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/blog-video.html">
                                                     blog video
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/blog-gallary.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/blog-gallary.html">
                                                     blog gallary
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/blog-audio.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/blog-audio.html">
                                                     blog audio
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/blog-link.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/blog-link.html">
                                                     blog link
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/blog-quote.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/blog-quote.html">
                                                     blog quote
                                                 </a>
                                             </li>
@@ -544,12 +491,12 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-bs-toggle="collapse" href="#shopPage"
-                                    role="button" aria-expanded="false" aria-controls="shopPage">
+                                <a class="nav-link" data-bs-toggle="collapse" href="#shopPage" role="button"
+                                    aria-expanded="false" aria-controls="shopPage">
                                     <span class="item-name">Shop</span>
                                     <span class="menu-icon">
-                                        <svg width="8" height="9" viewBox="0 0 8 9"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg width="8" height="9" viewBox="0 0 8 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
                                             <path
                                                 d="M4 0.5C4.27614 0.5 4.5 0.723858 4.5 1V4H7.5C7.77614 4 8 4.22386 8 4.5C8 4.77614 7.77614 5 7.5 5H4.5V8C4.5 8.27614 4.27614 8.5 4 8.5C3.72386 8.5 3.5 8.27614 3.5 8V5H0.5C0.223858 5 0 4.77614 0 4.5C0 4.22386 0.223858 4 0.5 4H3.5V1C3.5 0.723858 3.72386 0.5 4 0.5Z"
                                                 fill="currentColor" />
@@ -563,24 +510,20 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse"
-                                            href="#productSidebar" role="button"
-                                            aria-expanded="false" aria-controls="productSidebar">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#productSidebar"
+                                            role="button" aria-expanded="false" aria-controls="productSidebar">
                                             <span class="item-name">Product Sidebar</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
                                             </span>
                                         </a>
-                                        <ul class="sub-nav collapse  list-unstyled"
-                                            id="productSidebar">
+                                        <ul class="sub-nav collapse  list-unstyled" id="productSidebar">
                                             <li class="nav-item">
                                                 <a class="nav-link "
                                                     href="{{ asset('website') }}/shop-left-sidebar.html">
@@ -602,17 +545,14 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse" href="#sPages"
-                                            role="button" aria-expanded="false"
-                                            aria-controls="sPages">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#sPages" role="button"
+                                            aria-expanded="false" aria-controls="sPages">
                                             <span class="item-name">Shop Pages</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -620,49 +560,41 @@
                                         </a>
                                         <ul class="sub-nav collapse  list-unstyled" id="sPages">
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/cart.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/cart.html">
                                                     cart
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/checkout.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/checkout.html">
                                                     checkout
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/wishlist.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/wishlist.html">
                                                     wishlist
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/my-account.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/my-account.html">
                                                     my account
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/track-order.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/track-order.html">
                                                     track-order
                                                 </a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-bs-toggle="collapse" href="#proType"
-                                            role="button" aria-expanded="false"
-                                            aria-controls="proType">
+                                        <a class="nav-link" data-bs-toggle="collapse" href="#proType" role="button"
+                                            aria-expanded="false" aria-controls="proType">
                                             <span class="item-name">Product Type</span>
                                             <span class="menu-icon">
-                                                <svg class="icon-32" width="32"
-                                                    viewBox="0 0 24 24" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M8.5 5L15.5 12L8.5 19"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round"
+                                                <svg class="icon-32" width="32" viewBox="0 0 24 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M8.5 5L15.5 12L8.5 19" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
                                                         stroke-linejoin="round">
                                                     </path>
                                                 </svg>
@@ -676,14 +608,12 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/product-new.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/product-new.html">
                                                     product new
                                                 </a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link "
-                                                    href="{{ asset('website') }}/product-sale.html">
+                                                <a class="nav-link " href="{{ asset('website') }}/product-sale.html">
                                                     product sale
                                                 </a>
                                             </li>
@@ -708,19 +638,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav align-items-center ms-auto mb-2 mb-xl-0">
                         <li class="nav-item dropdown iq-responsive-menu">
-                            <a href="#" class="nav-link" id="search-drop"
-                                data-bs-toggle="dropdown">
+                            <a href="#" class="nav-link" id="search-drop" data-bs-toggle="dropdown">
                                 <div class="btn-icon btn-sm rounded-pill btn-action">
                                     <span class="btn-inner">
-                                        <svg class="icon-20" width="20" viewBox="0 0 24 24"
-                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <circle cx="11.7669" cy="11.7666" r="8.98856"
-                                                stroke="currentColor" stroke-width="1.5"
-                                                stroke-linecap="round" stroke-linejoin="round">
+                                        <svg class="icon-20" width="20" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="11.7669" cy="11.7666" r="8.98856" stroke="currentColor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                             </circle>
                                             <path d="M18.0186 18.4851L21.5426 22" stroke="currentColor"
-                                                stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round">
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                             </path>
                                         </svg>
                                     </span>
@@ -729,19 +656,17 @@
                             <ul class="dropdown-menu dropdown-menu-end p-0" style="width: 20rem;">
                                 <li class="p-0">
                                     <div class="form-group input-group mb-0">
-                                        <input type="text" class="form-control"
-                                            placeholder="Search...">
+                                        <input type="text" class="form-control" placeholder="Search...">
                                         <span class="input-group-text">
-                                            <svg class="icon-20" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                            <svg class="icon-20" width="20" height="20" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="11.7669" cy="11.7666" r="8.98856"
-                                                    stroke="currentColor" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round">
                                                 </circle>
-                                                <path d="M18.0186 18.4851L21.5426 22"
-                                                    stroke="currentColor" stroke-width="1.5"
-                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M18.0186 18.4851L21.5426 22" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round">
                                                 </path>
                                             </svg>
                                         </span>
@@ -750,16 +675,14 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown" id="itemdropdown1">
-                            <a class="nav-link d-flex align-items-center" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link d-flex align-items-center" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="btn-icon btn-sm rounded-pill">
                                     <span class="btn-inner">
-                                        <svg class="user-icons" xmlns="http://www.w3.org/2000/svg"
-                                            width="20" height="21" viewBox="0 0 20 21"
-                                            fill="none">
-                                            <mask style="mask-type:alpha" maskUnits="userSpaceOnUse"
-                                                x="3" y="12" width="14" height="7">
+                                        <svg class="user-icons" xmlns="http://www.w3.org/2000/svg" width="20"
+                                            height="21" viewBox="0 0 20 21" fill="none">
+                                            <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="12"
+                                                width="14" height="7">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M3.33203 12.3041H16.5319V18.4491H3.33203V12.3041Z"
                                                     fill="white"></path>
@@ -769,8 +692,8 @@
                                                     d="M9.93286 13.5541C6.38203 13.5541 4.58203 14.1641 4.58203 15.3682C4.58203 16.5832 6.38203 17.1991 9.93286 17.1991C13.4829 17.1991 15.282 16.5891 15.282 15.3849C15.282 14.1699 13.4829 13.5541 9.93286 13.5541ZM9.93286 18.4491C8.30036 18.4491 3.33203 18.4491 3.33203 15.3682C3.33203 12.6216 7.09953 12.3041 9.93286 12.3041C11.5654 12.3041 16.532 12.3041 16.532 15.3849C16.532 18.1316 12.7654 18.4491 9.93286 18.4491Z"
                                                     fill="currentColor"></path>
                                             </g>
-                                            <mask style="mask-type:alpha" maskUnits="userSpaceOnUse"
-                                                x="5" y="1" width="10" height="10">
+                                            <mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="1"
+                                                width="10" height="10">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M5.50781 1.89075H14.3578V10.7396H5.50781V1.89075Z"
                                                     fill="white"></path>
@@ -784,24 +707,20 @@
                                     </span>
                                 </div>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end"
-                                aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item border-bottom"
                                         href="{{ asset('website') }}/login.html">Sign
                                         in</a></li>
-                                <li><a class="dropdown-item"
-                                        href="{{ asset('website') }}/registration.html">Sign
+                                <li><a class="dropdown-item" href="{{ asset('website') }}/registration.html">Sign
                                         up</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a href="#" class="nav-link" id="cart-drop"
-                                data-bs-toggle="dropdown">
+                            <a href="#" class="nav-link" id="cart-drop" data-bs-toggle="dropdown">
                                 <div class="btn-icon btn-sm rounded-pill btn-action position-relative">
                                     <span class="btn-inner">
-                                        <svg class="cart-icons" xmlns="http://www.w3.org/2000/svg"
-                                            width="18" height="17" viewBox="0 0 18 17"
-                                            fill="none">
+                                        <svg class="cart-icons" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="17" viewBox="0 0 18 17" fill="none">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M4.27385 4.95616L4.77635 10.9328C4.81302 11.3928 5.18885 11.7378 5.64802 11.7378H5.65135H14.7439H14.7455C15.1797 11.7378 15.5505 11.4145 15.6122 10.9853L16.4039 5.51949C16.4222 5.38949 16.3897 5.25949 16.3105 5.15449C16.2322 5.04866 16.1172 4.98033 15.9872 4.96199C15.813 4.96866 8.58552 4.95866 4.27385 4.95616ZM5.64631 12.9878C4.54881 12.9878 3.61964 12.1311 3.53047 11.0353L2.76714 1.95695L1.51131 1.74028C1.17048 1.68028 0.942975 1.35778 1.00131 1.01695C1.06131 0.676117 1.39047 0.45445 1.72381 0.507784L3.45714 0.807784C3.73631 0.85695 3.94881 1.08862 3.97297 1.37195L4.16881 3.70612C16.0655 3.71112 16.1038 3.71695 16.1613 3.72362C16.6255 3.79112 17.0338 4.03362 17.3121 4.40695C17.5905 4.77945 17.7071 5.23862 17.6405 5.69862L16.8496 11.1636C16.7005 12.2036 15.7971 12.9878 14.7471 12.9878H14.743H5.65297H5.64631Z"
                                                 fill="currentColor"></path>
@@ -833,8 +752,7 @@
                                                         alt="" loading="lazy" />
                                                     <div class="ms-3 flex-grow-1">
                                                         <h6 class="mb-0 ">Electric Toothbrush</h6>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-between align-items-center">
                                                             <p class="mb-0"><span>1</span> *
                                                                 <span>$123.00</span>
                                                             </p>
@@ -854,8 +772,7 @@
                                                         alt="" loading="lazy" />
                                                     <div class="ms-3 flex-grow-1">
                                                         <h6 class="mb-0 ">Medical Box</h6>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-between align-items-center">
                                                             <p class="mb-0"><span>1</span> *
                                                                 <span>$92.00</span>
                                                             </p>
@@ -875,8 +792,7 @@
                                                         alt="" loading="lazy" />
                                                     <div class="ms-3 flex-grow-1">
                                                         <h6 class="mb-0 ">Hand Sanitizer Bottle</h6>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-between align-items-center">
                                                             <p class="mb-0"><span>1</span> *
                                                                 <span>$90.00</span>
                                                             </p>
@@ -896,8 +812,7 @@
                                                         alt="" loading="lazy" />
                                                     <div class="ms-3 flex-grow-1">
                                                         <h6 class="mb-0 ">Wheel Chair</h6>
-                                                        <div
-                                                            class="d-flex justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-between align-items-center">
                                                             <p class="mb-0"><span>1</span> *
                                                                 <span>$89.00</span>
                                                             </p>
@@ -911,8 +826,7 @@
                                         </div>
                                     </div>
                                     <div class="card-footer pt-3 px-0 pb-0 text-center">
-                                        <div
-                                            class="d-flex align-items-center justify-content-between ">
+                                        <div class="d-flex align-items-center justify-content-between ">
                                             <strong>Subtotal:</strong>
                                             <span>$64.00</span>
                                         </div>
@@ -922,13 +836,11 @@
                                                 <div class="iq-btn-container">
                                                     <a class="iq-button text-capitalize"
                                                         href="{{ asset('website') }}/cart.html">
-                                                        <span
-                                                            class="iq-btn-text-holder position-relative">View
+                                                        <span class="iq-btn-text-holder position-relative">View
                                                             Cart</span>
                                                         <span class="iq-btn-icon-holder">
-                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                width="10" height="10"
-                                                                viewBox="0 0 8 8" fill="none">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                height="10" viewBox="0 0 8 8" fill="none">
                                                                 <path
                                                                     d="M7.32046 4.70834H4.74952V7.25698C4.74952 7.66734 4.41395 8 4 8C3.58605 8 3.25048 7.66734 3.25048 7.25698V4.70834H0.679545C0.293423 4.6687 0 4.34614 0 3.96132C0 3.5765 0.293423 3.25394 0.679545 3.21431H3.24242V0.673653C3.28241 0.290878 3.60778 0 3.99597 0C4.38416 0 4.70954 0.290878 4.74952 0.673653V3.21431H7.32046C7.70658 3.25394 8 3.5765 8 3.96132C8 4.34614 7.70658 4.6687 7.32046 4.70834Z"
                                                                     fill="currentColor"></path>
@@ -944,9 +856,8 @@
                                                         <span
                                                             class="iq-btn-text-holder position-relative">Checkout</span>
                                                         <span class="iq-btn-icon-holder">
-                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                width="10" height="10"
-                                                                viewBox="0 0 8 8" fill="none">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="10"
+                                                                height="10" viewBox="0 0 8 8" fill="none">
                                                                 <path
                                                                     d="M7.32046 4.70834H4.74952V7.25698C4.74952 7.66734 4.41395 8 4 8C3.58605 8 3.25048 7.66734 3.25048 7.25698V4.70834H0.679545C0.293423 4.6687 0 4.34614 0 3.96132C0 3.5765 0.293423 3.25394 0.679545 3.21431H3.24242V0.673653C3.28241 0.290878 3.60778 0 3.99597 0C4.38416 0 4.70954 0.290878 4.74952 0.673653V3.21431H7.32046C7.70658 3.25394 8 3.5765 8 3.96132C8 4.34614 7.70658 4.6687 7.32046 4.70834Z"
                                                                     fill="currentColor"></path>
@@ -962,13 +873,11 @@
                         </li>
                         <li class="button-primary ms-3">
                             <div class="iq-btn-container">
-                                <a class="iq-button text-capitalize"
-                                    href="{{ asset('website') }}/appointment.html">
-                                    <span
-                                        class="iq-btn-text-holder position-relative">Appointment</span>
+                                <a class="iq-button text-capitalize" href="{{ asset('website') }}/appointment.html">
+                                    <span class="iq-btn-text-holder position-relative">Appointment</span>
                                     <span class="iq-btn-icon-holder">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="10"
-                                            height="10" viewBox="0 0 8 8" fill="none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
+                                            viewBox="0 0 8 8" fill="none">
                                             <path
                                                 d="M7.32046 4.70834H4.74952V7.25698C4.74952 7.66734 4.41395 8 4 8C3.58605 8 3.25048 7.66734 3.25048 7.25698V4.70834H0.679545C0.293423 4.6687 0 4.34614 0 3.96132C0 3.5765 0.293423 3.25394 0.679545 3.21431H3.24242V0.673653C3.28241 0.290878 3.60778 0 3.99597 0C4.38416 0 4.70954 0.290878 4.74952 0.673653V3.21431H7.32046C7.70658 3.25394 8 3.5765 8 3.96132C8 4.34614 7.70658 4.6687 7.32046 4.70834Z"
                                                 fill="currentColor"></path>
@@ -979,8 +888,7 @@
                         </li>
                         <li class="ms-3">
                             <div class="cursor-pointer" data-bs-toggle="offcanvas"
-                                data-bs-target="#right-panel-toggle"
-                                aria-controls="right-panel-toggle">
+                                data-bs-target="#right-panel-toggle" aria-controls="right-panel-toggle">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22"
                                     viewBox="0 0 28 22" fill="none">
                                     <path d="M0 0H24V2H0V0Z" fill="#171C26" />
