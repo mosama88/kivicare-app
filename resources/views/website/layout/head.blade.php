@@ -61,5 +61,5 @@
 
 <meta name="page_colors"
     content='[{&quot;var&quot;:&quot;--bs-primary&quot;,&quot;value&quot;:&quot;#1dbfcc&quot;},{&quot;var&quot;:&quot;--bs-primary-bg-subtle&quot;,&quot;value&quot;:&quot;#e3f4f5&quot;},{&quot;var&quot;:&quot;--bs-primary-rgb&quot;,&quot;value&quot;:&quot;29, 191, 204&quot;},{&quot;var&quot;:&quot;--bs-primary-shade-20&quot;,&quot;value&quot;:&quot;#10949f&quot;},{&quot;var&quot;:&quot;--bs-secondary&quot;,&quot;value&quot;:&quot;#171c26&quot;},{&quot;var&quot;:&quot;--bs-secondary-rgb&quot;,&quot;value&quot;:&quot;23, 28, 38&quot;}]'>
-
+<link rel="stylesheet" href="{{ asset('website') }}/assets/css/style.css" />
 @stack('css')

@@ -119,7 +119,7 @@
                     <div class="iq-title-box text-white pe-lg-5 mb-0">
                         <span class="iq-subtitle text-uppercase text-white">about kiviCare</span>
                         <h2 class="iq-title iq-heading-title text-white">
-                            <span class="right-text text-capitalize fw-500">A perfect smile</span>
+                            <span class="right-text text-capitalize fw-500">{{__('home.A_perfect_smile')}}</span>
                             <span class="left-text text-capitalize fw-light">guaranteed by kiviCare</span>
                         </h2>
                         <p class="iq-title-desc text-white pb-4">
