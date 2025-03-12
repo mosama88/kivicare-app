@@ -22,7 +22,6 @@
 <!-- Sweetlaert2 css -->
 <link rel="stylesheet" href="{{ asset('website') }}/assets/vendor/sweetalert2/dist/sweetalert2.min.css" />
 
-
 <!-- SwiperSlider css -->
 <link rel="stylesheet" href="{{ asset('website') }}/assets/vendor/swiperSlider/swiper-bundle.min.css">
 
@@ -32,8 +31,22 @@
 <!-- Custom Css -->
 <link rel="stylesheet" href="{{ asset('website') }}/assets/css/custom.min.css?v=1.4.1" />
 
-<!-- Rtl Css -->
-<link rel="stylesheet" href="{{ asset('website') }}/assets/css/rtl.min.css?v=1.4.1" />
+@if (app()->getLocale() == 'ar')
+    <!-- Arabic Font -->
+    <link rel="stylesheet" href="{{ asset('website') }}/arabic-fonts/stylesheet.css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+
+    <!-- Rtl Css -->
+    <link rel="stylesheet" href="{{ asset('website') }}/assets/css/rtl.min.css?v=1.4.1" />
+@endif
+
+
+
 
 <!-- Customizer Css -->
 <link rel="stylesheet" href="{{ asset('website') }}/assets/css/customizer.min.css?v=1.4.1" />
