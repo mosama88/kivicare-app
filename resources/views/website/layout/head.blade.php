@@ -1,7 +1,6 @@
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Kivicare | Medical Clinic & Patient Management Html Template</title>
+<title>Kivicare | @yield('title')</title>
 <!-- Config Options -->
 <meta name="setting_options"
     content='{&quot;saveLocal&quot;:&quot;sessionStorage&quot;,&quot;storeKey&quot;:&quot;huisetting&quot;,&quot;setting&quot;:{&quot;app_name&quot;:{&quot;value&quot;:&quot;Kivicare&quot;}}}'>

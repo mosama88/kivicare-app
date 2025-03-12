@@ -7,9 +7,9 @@ use App\Http\Controllers\WebSite\HomeConterller;
 
 
 
-Route::middleware('web')->name('home')->group(function () {
+Route::middleware('guest')->name('home')->group(function () {
     Route::get('/', [HomeConterller::class, 'index'])->name('index');
 
     //Language
-    Route::get('change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
+    Route::get('/website/change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
 });
