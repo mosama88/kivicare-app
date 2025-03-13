@@ -40,6 +40,33 @@
         </div>
 
         <div class="custom-form-field mb-3">
+            <label for="username">Gender &nbsp;<span>*</span></label>
+            <select class="form-control @error('mobile') is-invalid @enderror mb-5" name="gender" id="">
+                <option value="" selected>-- Select Gender --</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+            @error('gender')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+
+
+        <div class="custom-form-field mb-3">
+            <label for="username">Birth Of Date &nbsp;<span>*</span></label>
+            <input type="date" class="form-control @error('birth_date') is-invalid @enderror mb-5" name="birth_date">
+            @error('birth_date')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+
+
+
+        <div class="custom-form-field mb-3">
             <label for="username">Email &nbsp;<span>*</span></label>
             <input type="email" name="email" value="{{ old('email') }}"
                 class="form-control @error('email') is-invalid @enderror mb-5" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
@@ -65,7 +92,8 @@
         <div class="custom-form-field mb-3">
             <label for="password">Confirm Password&nbsp; <span>*</span>
             </label>
-            <input type="password" name="password_confirmation" class="form-control @error('password') is-invalid @enderror
+            <input type="password" name="password_confirmation"
+                class="form-control @error('password') is-invalid @enderror
                 mb-5">
             @error('password_confirmation')
                 <span class="invalid-feedback" role="alert">
