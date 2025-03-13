@@ -173,10 +173,9 @@
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item border-bottom"
-                                        href="{{ asset('website') }}/login.html">Sign
+                                <li><a class="dropdown-item border-bottom" href="{{ asset('login') }}">Sign
                                         in</a></li>
-                                <li><a class="dropdown-item" href="{{ asset('website') }}/registration.html">Sign
+                                <li><a class="dropdown-item" href="{{ asset('register') }}">Sign
                                         up</a></li>
                             </ul>
                         </li>
