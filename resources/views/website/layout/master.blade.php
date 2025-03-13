@@ -56,7 +56,7 @@
 
 <!-- setting -->
 
-@include('website.layout.change-language')
+{{-- @include('website.layout.change-language') --}}
 
 <!-- setting -->
 

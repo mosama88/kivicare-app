@@ -54,7 +54,7 @@
                     </p>
                 </div>
             </div>
-            <div class="icon-box-right position-absolute">
+            {{-- <div class="icon-box-right position-absolute">
                 <div class="iq-icon-box column d-flex align-items-center gap-2">
                     <div class="icon-box-img">
                         <img src="{{ asset('website') }}/assets/images//Dentist-Page/dentist-banner-phone.webp"
@@ -66,7 +66,7 @@
                             01234 56897</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     <div class="bg-dentist-dark px-3">
@@ -94,8 +94,9 @@
                                     </div>
                                     <div class="circle-progressbar-info">
                                         <span
-                                            class="circle-progressbar-subtitle text-white text-uppercase fw-semibold letter-spacing-2">Dental</span>
-                                        <h5 class="circle-progressbar-title mt-2 mb-0 text-white">Dental Care</h5>
+                                            class="circle-progressbar-subtitle text-white text-uppercase fw-semibold letter-spacing-2">{{ __('home.Dental') }}</span>
+                                        <h5 class="circle-progressbar-title mt-2 mb-0 text-white">
+                                            {{ __('home.Dental_Care') }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -110,8 +111,9 @@
                                     </div>
                                     <div class="circle-progressbar-info">
                                         <span
-                                            class="circle-progressbar-subtitle text-white text-uppercase fw-semibold letter-spacing-2">Smile</span>
-                                        <h5 class="circle-progressbar-title mt-2 mb-0 text-white">Sweet Smile</h5>
+                                            class="circle-progressbar-subtitle text-white text-uppercase fw-semibold letter-spacing-2">{{ __('home.Smile') }}</span>
+                                        <h5 class="circle-progressbar-title mt-2 mb-0 text-white">
+                                            {{ __('home.Sweet_Smile') }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +121,8 @@
                         <div class="padding-top-80 button-white">
                             <div class="iq-btn-container">
                                 <a class="iq-button text-capitalize" href="{{ asset('website') }}/appointment.html">
-                                    <span class="iq-btn-text-holder position-relative">Get appointment</span>
+                                    <span
+                                        class="iq-btn-text-holder position-relative">{{ __('home.Get_appointment') }}</span>
                                     <span class="iq-btn-icon-holder">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"
                                             viewBox="0 0 8 8" fill="none">

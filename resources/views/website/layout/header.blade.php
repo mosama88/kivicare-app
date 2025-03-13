@@ -5,8 +5,8 @@
                 <div class="d-flex gap-3 gap-xl-0 align-items-center">
                     <a href="{{ asset('website') }}/index.html" class="navbar-brand m-0">
                         <span class="logo-normal">
-                            <img src="{{ asset('website') }}/assets/images/logo/logo-skyblue.png"
-                                alt="logo" class="img-fluid" loading="lazy">
+                            <img src="{{ asset('website') }}/assets/images/logo/logo-skyblue.png" alt="logo"
+                                class="img-fluid" loading="lazy">
                         </span>
                     </a>
                 </div>
@@ -21,9 +21,8 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M13.7217 14.831C12.8854 14.831 12.0516 14.5547 11.3541 14.0022L5.7479 9.48224C5.34415 9.15724 5.28165 8.56599 5.6054 8.16349C5.93165 7.76224 6.52165 7.69849 6.92415 8.02224L12.5254 12.5372C13.2292 13.0947 14.2204 13.0947 14.9291 12.5322L20.4741 8.02474C20.8766 7.69599 21.4667 7.75849 21.7941 8.16099C22.1204 8.56224 22.0592 9.15224 21.6579 9.47974L16.1029 13.9947C15.4004 14.5522 14.5604 14.831 13.7217 14.831Z"
                                         fill="#1DBFCC"></path>
-                                    <mask id="mask0_797_2541" style="mask-type:alpha"
-                                        maskUnits="userSpaceOnUse" x="0" y="0" width="28"
-                                        height="25">
+                                    <mask id="mask0_797_2541" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="28" height="25">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M0.25 0.5H27.1249V24.875H0.25V0.5Z" fill="white">
                                         </path>
@@ -36,7 +35,7 @@
                                 </svg>
                             </div>
                             <div class="icon-box-content text-start text-body">
-                                <h6 class="icon-box-title">Email Us On</h6>
+                                <h6 class="icon-box-title">{{ __('header.Email_Us_On') }}</h6>
                                 <p class="icon-box-desc m-0">kivicare@gmail.com</p>
                             </div>
                         </div>
@@ -49,11 +48,10 @@
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M10.3125 8.625C9.10625 8.625 8.125 9.60625 8.125 10.8138C8.125 12.02 9.10625 13 10.3125 13C11.5188 13 12.5 12.02 12.5 10.8138C12.5 9.60625 11.5188 8.625 10.3125 8.625ZM10.3125 14.875C8.0725 14.875 6.25 13.0538 6.25 10.8137C6.25 8.5725 8.0725 6.75 10.3125 6.75C12.5525 6.75 14.375 8.5725 14.375 10.8137C14.375 13.0538 12.5525 14.875 10.3125 14.875Z"
                                         fill="#1DBFCC"></path>
-                                    <mask id="mask0_1131_523" style="mask-type:alpha"
-                                        maskUnits="userSpaceOnUse" x="0" y="0" width="21"
-                                        height="25">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 0.5H20.6244V24.875H0V0.5Z" fill="white"></path>
+                                    <mask id="mask0_1131_523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="21" height="25">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.5H20.6244V24.875H0V0.5Z"
+                                            fill="white"></path>
                                     </mask>
                                     <g mask="url(#mask0_1131_523)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -63,7 +61,7 @@
                                 </svg>
                             </div>
                             <div class="icon-box-content text-start text-body">
-                                <h6 class="icon-box-title">Visit Location</h6>
+                                <h6 class="icon-box-title">{{ __('header.Visit_Location') }}</h6>
                                 <p class="icon-box-desc m-0">1234 North Avenue Luke</p>
                             </div>
                         </div>
@@ -73,12 +71,10 @@
                             <div class="icon-box-img">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27"
                                     viewBox="0 0 27 27" fill="none" class="text-primary">
-                                    <mask id="mask0_1131_498" style="mask-type:alpha"
-                                        maskUnits="userSpaceOnUse" x="0" y="0" width="27"
-                                        height="27">
+                                    <mask id="mask0_1131_498" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="27" height="27">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0.5 0.500244H26.1245V26.1246H0.5V0.500244Z"
-                                            fill="white"></path>
+                                            d="M0.5 0.500244H26.1245V26.1246H0.5V0.500244Z" fill="white"></path>
                                     </mask>
                                     <g mask="url(#mask0_1131_498)">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -88,7 +84,7 @@
                                 </svg>
                             </div>
                             <div class="icon-box-content text-start text-body">
-                                <h6 class="icon-box-title">Have Any Question?</h6>
+                                <h6 class="icon-box-title">{{ __('header.Have_Any_Question?') }}</h6>
                                 <p class="icon-box-desc m-0">+ (480) 555-0103</p>
                             </div>
                         </div>
