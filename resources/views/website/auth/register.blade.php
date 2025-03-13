@@ -43,8 +43,10 @@
             <label for="username">Gender &nbsp;<span>*</span></label>
             <select class="form-control @error('mobile') is-invalid @enderror mb-5" name="gender" id="">
                 <option value="" selected>-- Select Gender --</option>
-                <option value="1">Male</option>
-                <option value="2">Female</option>
+                <option @if (old('gender') == App\Enum\GenderEnum::Male) selected @endif value="{{ App\Enum\GenderEnum::Male }}">Male
+                </option>
+                <option @if (old('gender') == App\Enum\GenderEnum::Female) selected @endif value="{{ App\Enum\GenderEnum::Female }}">Female
+                </option>
             </select>
             @error('gender')
                 <span class="invalid-feedback" role="alert">

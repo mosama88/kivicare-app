@@ -1,3 +1,7 @@
+@php
+    use App\Enum\GenderEnum;
+
+@endphp
 <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar header-hover-menu py-xl-0">
     <div class="container-fluid navbar-inner">
         <div class="d-flex align-items-center justify-content-between w-100 landing-header">
@@ -173,10 +177,19 @@
                                                 </g>
                                             </svg>
                                         @endguest
+
                                         @auth
-                                            <img class="rounded-circle object-cover"
-                                                src="{{ asset('website') }}/assets/images/user-avatar-female-128.png"
-                                                style="width:110%" alt="{{ Auth::user()->first_name }}">
+                                            @if (Auth::user()->gender == 1)
+                                                <img class="rounded-circle object-cover"
+                                                    src="{{ asset('website') }}/assets/images/user-avatar-male-5-128.png"
+                                                    style="width:110%" alt="{{ Auth::user()->first_name }}">
+                                            @else
+                                                <img class="rounded-circle object-cover"
+                                                    src="{{ asset('website') }}/assets/images/user-avatar-female-128.png"
+                                                    style="width:110%" alt="{{ Auth::user()->first_name }}">
+                                            @endif
+
+
 
                                         @endauth
 

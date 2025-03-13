@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LanguageController;
@@ -30,7 +31,6 @@ Route::middleware('web')->name('website.')->group(function () {
     //---------------------------------------------------- Language
     Route::get('/website/change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
 });
-
 
 
 
