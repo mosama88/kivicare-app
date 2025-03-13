@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-xxl-6 col-xl-4">
                 <div class="d-flex gap-3 gap-xl-0 align-items-center">
-                    <a href="{{ asset('website') }}/index.html" class="navbar-brand m-0">
+                    <a href="{{ route('website.index') }}" class="navbar-brand m-0">
                         <span class="logo-normal">
                             <img src="{{ asset('website') }}/assets/images/logo/logo-skyblue.png" alt="logo"
                                 class="img-fluid" loading="lazy">

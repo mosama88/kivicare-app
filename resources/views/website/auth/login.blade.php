@@ -2,21 +2,33 @@
 @section('title', __('navbar.Sign_in'))
 
 @section('content')
-    <form method="post">
-        <div class="custom-form-field">
-            <label for="username">Username or email
-                address&nbsp;<span>*</span></label>
-            <input type="email" name="user-name" class="form-control mb-5" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+    <form method="POST" action="{{ route('login') }}">
+        @csrf
+        <div class="custom-form-field mb-3">
+            <label for="username">Email &nbsp;<span>*</span></label>
+            <input type="email" name="email" value="{{ old('email') }}"
+                class="form-control @error('email') is-invalid @enderror mb-5" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
                 title="Please enter a valid Gmail address (e.g., example@gmail.com)">
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
-        <div class="custom-form-field">
+
+        <div class="custom-form-field mb-3">
             <label for="password">Password&nbsp; <span>*</span>
             </label>
-            <input type="password" name="pwd" class="form-control mb-5" required>
+            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror mb-5">
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
         <div class="flex-column flex-sm-row d-flex align-items-start justify-content-between mb-5 gap-2">
             <label class="custom-form-field">
-                <input type="checkbox" required="required" class="mr-2">
+                <input type="checkbox" class="mr-2">
                 <span class="checkmark"></span>
                 <span>Remember me</span>
             </label>
@@ -25,7 +37,7 @@
         </div>
         <div class="iq-btn-container">
             <button type="submit" class="iq-button text-capitalize border-0">
-                <span class="iq-btn-text-holder position-relative">{{__('navbar.Sign_in')}}</span>
+                <span class="iq-btn-text-holder position-relative">{{ __('navbar.Sign_in') }}</span>
                 <span class="iq-btn-icon-holder">
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
                         <path
@@ -40,7 +52,7 @@
         <p class="my-0 text-capitalize">Don't have an account yet?</p>
         <h5 class="sign_up_btn mb-0">
             <div class="iq-btn-container">
-                <a class="iq-button iq-btn-link text-capitalize" href="{{route('register')}}">
+                <a class="iq-button iq-btn-link text-capitalize" href="{{ route('register') }}">
                     sign up
                     <span class="btn-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8"

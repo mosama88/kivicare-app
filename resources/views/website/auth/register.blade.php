@@ -2,45 +2,81 @@
 @section('title', __('navbar.Sign_up'))
 
 @section('content')
-    <form method="post">
-        <div class="row">
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
+        <div class="row mb-3">
             <div class="custom-form-field col-6">
                 <label for="username">First Name&nbsp;<span>*</span></label>
-                <input type="email" name="user-name" class="form-control mb-5" required
-                    pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
-                    title="Please enter a valid Gmail address (e.g., example@gmail.com)">
+                <input type="text" name="first_name" value="{{ old('first_name') }}"
+                    class="form-control @error('first_name') is-invalid @enderror mb-5" title="First Name (e.g., Mohamed">
+                @error('first_name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="custom-form-field col-6">
                 <label for="username">Last Name&nbsp;<span>*</span></label>
-                <input type="email" name="user-name" class="form-control mb-5" required
-                    pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
-                    title="Please enter a valid Gmail address (e.g., example@gmail.com)">
+                <input type="text" name="last_name" value="{{ old('last_name') }}"
+                    class="form-control @error('last_name') is-invalid @enderror mb-5" title="Last Name (e.g., Osama">
+                @error('last_name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
             </div>
         </div>
 
-        <div class="custom-form-field">
+        <div class="custom-form-field mb-3">
             <label for="username">Mobile &nbsp;<span>*</span></label>
-            <input type="email" name="user-name" class="form-control mb-5" required
-                pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
-                title="Please enter a valid Gmail address (e.g., example@gmail.com)">
+            <input type="text" name="mobile" value="{{ old('mobile') }}"
+                class="form-control @error('mobile') is-invalid @enderror mb-5"
+                title="Please enter a valid mobile number (e.g., 01xxxxxxxx">
+            @error('mobile')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
 
-        <div class="custom-form-field">
+        <div class="custom-form-field mb-3">
             <label for="username">Email &nbsp;<span>*</span></label>
-            <input type="email" name="user-name" class="form-control mb-5" required
-                pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+            <input type="email" name="email" value="{{ old('email') }}"
+                class="form-control @error('email') is-invalid @enderror mb-5" pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
                 title="Please enter a valid Gmail address (e.g., example@gmail.com)">
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
 
-        <div class="custom-form-field">
+        <div class="custom-form-field mb-3">
             <label for="password">Password&nbsp; <span>*</span>
             </label>
-            <input type="password" name="pwd" class="form-control mb-5" required>
+            <input type="password" name="password" class="form-control @error('password') is-invalid @enderror mb-5">
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
         </div>
-       
+
+        <div class="custom-form-field mb-3">
+            <label for="password">Confirm Password&nbsp; <span>*</span>
+            </label>
+            <input type="password" name="password_confirmation" class="form-control @error('password') is-invalid @enderror
+                mb-5">
+            @error('password_confirmation')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+
         <div class="iq-btn-container">
             <button type="submit" class="iq-button text-capitalize border-0">
-                <span class="iq-btn-text-holder position-relative">{{ __('navbar.Sign_up')}}</span>
+                <span class="iq-btn-text-holder position-relative">{{ __('navbar.Sign_up') }}</span>
                 <span class="iq-btn-icon-holder">
                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8" fill="none">
                         <path
@@ -55,7 +91,7 @@
         <p class="my-0 text-capitalize">Already have account.</p>
         <h5 class="sign_up_btn mb-0">
             <div class="iq-btn-container">
-                <a class="iq-button iq-btn-link text-capitalize" href="{{route('login')}}">
+                <a class="iq-button iq-btn-link text-capitalize" href="{{ route('login') }}">
                     sign in
                     <span class="btn-link-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 8 8"

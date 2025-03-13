@@ -3,24 +3,11 @@
     @section('content')
 
 
-        </div> <!--bread-crumb-->
-        <div class="iq-breadcrumb bg-primary-subtle">
-            <div class="container">
-                <nav aria-label="breadcrumb" class="text-center">
-                    <h2 class="title">{{ __('navbar.Contact_Us') }}</h2>
-                    <ol class="breadcrumb justify-content-center mt-2 mb-0">
-                        <li class="breadcrumb-item">
-                            <a href="{{ url('/') }}">{{ __('navbar.home') }}</a>
-                        </li>
-                        <li class="breadcrumb-item active">
-                            {{ __('navbar.Contact_Us') }}
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </div> <!--bread-crumb-->
+        @include('website\layout\breadcrumb', [
+            'title' => __('navbar.Contact_Us'),
+            'title_desc' => __('navbar.Contact_Us'),
+        ])
 
-        </div>
         <div class="text-center">
             <div class="container section-padding border-bottom">
                 <div class="row">

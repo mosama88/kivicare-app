@@ -173,10 +173,53 @@
                                 </div>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item border-bottom" href="{{ asset('login') }}">Sign
-                                        in</a></li>
-                                <li><a class="dropdown-item" href="{{ asset('register') }}">Sign
-                                        up</a></li>
+                                @auth
+
+
+
+
+                                    <li>
+                                        <span class="dropdown-item border-bottom text-center">
+                                            {{ __('navbar.Welcome') }} {{ Auth::user()->first_name }}
+                                        </span>
+                                    </li>
+
+
+
+
+
+
+
+
+                                    <li>
+                                        <a class="dropdown-item border-bottom" href="{{ asset('profile') }}">
+                                            <i class="fas fa-user"></i> {{ __('navbar.profile') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <form action="{{ route('logout') }}" method="POST">
+                                            @csrf
+                                            <a class="dropdown-item" href=""
+                                                onclick="event.preventDefault(); this.closest('form').submit();">
+                                                <i class="fas fa-sign-out-alt"></i> {{ __('navbar.logout') }}
+                                            </a>
+                                        </form>
+
+                                    </li>
+                                @endauth
+                                @guest
+                                    <li>
+                                        <a class="dropdown-item border-bottom" href="{{ asset('login') }}">
+                                            <i class="fas fa-sign-in-alt"></i> {{ __('navbar.Sign_in') }}
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ asset('register') }}">
+                                            <i class="fas fa-sign-out-alt"></i> {{ __('navbar.Sign_up') }}
+                                        </a>
+                                    </li>
+                                @endguest
+
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -222,7 +265,7 @@
                         </li>
                         <li class="button-primary ms-3">
                             <div class="iq-btn-container">
-                                <a class="iq-button text-capitalize" href="{{ asset('website') }}/appointment.html">
+                                <a class="iq-button text-capitalize" href="{{ route('website.appointment') }}">
                                     <span
                                         class="iq-btn-text-holder position-relative">{{ __('navbar.Appointment') }}</span>
                                     <span class="iq-btn-icon-holder">

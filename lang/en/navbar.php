@@ -9,4 +9,8 @@ return [
   'Contact_Us' => 'Contact Us',
   'Sign_in' => 'Sign in',
   'Sign_up' => 'Sign up',
+  'My_Account' => 'My Account',
+  'logout' => 'Logout',
+  'profile' => 'Profile',
+  'Welcome' => 'Welcome',
 ];

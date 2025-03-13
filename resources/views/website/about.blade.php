@@ -2,24 +2,10 @@
 @section('title', __('navbar.About_US'))
 @section('content')
 
-
-    <div class="iq-breadcrumb bg-primary-subtle">
-        <div class="container">
-            <nav aria-label="breadcrumb" class="text-center">
-                <h2 class="title">{{ __('navbar.About_US') }}</h2>
-                <ol class="breadcrumb justify-content-center mt-2 mb-0">
-                    <li class="breadcrumb-item">
-                        <a href="{{ url('/') }}">{{ __('navbar.home') }}</a>
-                    </li>
-                    <li class="breadcrumb-item active">
-                        {{ __('navbar.About_US') }}
-                    </li>
-                </ol>
-            </nav>
-        </div>
-    </div> <!--bread-crumb-->
-
-    </div>
+    @include('website\layout\breadcrumb', [
+        'title' => __('navbar.About_US'),
+        'title_desc' => __('navbar.About_US'),
+    ])
     <div class="section-padding">
         <div class="container position-relative">
             <div class="row pt-5">
@@ -151,9 +137,8 @@
                                     </div>
                                 </div>
                                 <div class="progress" style="height:10px">
-                                    <div class="progress-bar bg-primary" role="progressbar"
-                                        style="width: 90%; height:10px" aria-valuenow="25" aria-valuemin="0"
-                                        aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%; height:10px"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </li>
                             <li>
