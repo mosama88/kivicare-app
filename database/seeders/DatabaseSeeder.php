@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Admin;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -14,6 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory(10)->create();
+        Admin::factory(10)->create();
 
         User::factory()->create([
             'first_name' => 'Test',
@@ -22,6 +24,12 @@ class DatabaseSeeder extends Seeder
             'birth_date' => '2020-11-13',
             'gender' => '1',
             'email' => 'test@example.com',
+        ]);
+
+        Admin::factory()->create([
+            'name' => 'Mohamed Osama',
+            'username' => 'mosama',
+            'email' => 'mosama@hotmail.com',
         ]);
     }
 }

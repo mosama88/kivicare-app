@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\WebSite\HomeConterller;
+use App\Http\Controllers\Dashboard\Auth\AdminLoginController;
 
 
 
@@ -17,14 +18,26 @@ use App\Http\Controllers\WebSite\HomeConterller;
 
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
 
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
+Route::get('/', function () {
+    return view('dashboard.index');
+})->middleware(['auth:admin', 'verified'])->name('index');
 
-// require __DIR__ . '/auth.php';
+
+
+
+//---------------------------------------------------- Auth
+Route::middleware('guest:admin')->group(function () {
+    //---------------------------------------------------- login
+    Route::get('login', [AdminLoginController::class, 'create'])
+        ->name('login');
+
+    Route::post('login', [AdminLoginController::class, 'store']);
+});
+
+
+Route::middleware('auth:admin')->group(function () {
+    //---------------------------------------------------- logout
+    Route::post('logout', [AdminLoginController::class, 'destroy'])
+        ->name('logout');
+});
