@@ -1,7 +1,5 @@
 @extends('website.layout.master')
-
-
-@section('title', 'Home')
+@section('title', __('navbar.home'))
 @section('content')
     <div class="banner-dentist-page">
         <div class="container-fluid position-relative">
