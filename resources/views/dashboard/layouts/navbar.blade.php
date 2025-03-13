@@ -1,6 +1,6 @@
 <nav class="nav navbar navbar-expand-xl navbar-light iq-navbar">
     <div class="container-fluid navbar-inner">
-        <a href="./index.html" class="navbar-brand">
+        <a href="{{ route('dashboard.index') }}" class="navbar-brand">
 
             <!--Logo start-->
             <div class="logo-main">
@@ -649,6 +649,107 @@
                         </div>
                     </div>
                 </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {{-- Language --}}
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" id="notification-cart" data-bs-toggle="dropdown">
+                        <div class="btn-action position-relative nav-list-icon">
+                            <span class="btn-inner">
+                                <i class="fas fa-language fa-lg mx-1"></i> Language </span>
+                        </div>
+                    </a>
+                    <div class="p-0 sub-drop dropdown-menu dropdown-menu-end" aria-labelledby="notification-cart">
+                        <div class="m-0 shadow-none card">
+                            <div class="py-3 card-header d-flex justify-content-between bg-primary mb-0">
+                                <div class="header-title">
+                                    <h5 class="mb-0 text-white">Choose Language</h5>
+                                </div>
+                            </div>
+                            <div class="p-0 card-body max-17 scroll-thin">
+
+
+                                <form action="{{ url('/dashboard/change-language/en') }}" method="GET">
+                                    <div class="w-50">
+                                        <button type="submit" class="btn dir-btn cutomizer-button w-100">
+                                            <img style="width: 40px;height:40px; margin:5px"
+                                                src="{{ asset('website') }}/assets/images/flags/united-states.png"
+                                                alt=""> English</button>
+                                    </div>
+                                </form>
+
+                                <form action="{{ url('/dashboard/change-language/ar') }}" method="GET">
+                                    <div class="w-50">
+
+                                        <button type="submit" class="btn dir-btn cutomizer-button w-100">
+                                            <img style="width: 40px;height:40px; margin:5px"
+                                                src="{{ asset('website') }}/assets/images/flags/egypt.png"
+                                                alt=""> العربية </button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <li class="nav-item iq-full-screen d-none d-xl-block" id="fullscreen-item">
                     <a href="#" class="nav-link" id="btnFullscreen" data-bs-toggle="dropdown">
                         <div class="icon nav-list-icon">

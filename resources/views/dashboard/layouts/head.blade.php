@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title data-setting="app_name" data-rightJoin=" Clinic And Patient Management Dashboard">KiviCare Clinic And Patient
-    Management Dashboard</title>
+<title>KiviCare | @yield('title')</title>
 <meta name="description"
     content="KiviCare is a revolutionary Bootstrap Admin Dashboard Template and UI Components Library. The Admin Dashboard Template and UI Component features 8 modules.">
 <meta name="keywords"

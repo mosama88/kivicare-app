@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\WebSite\HomeConterller;
+use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\Auth\AdminLoginController;
 
 
@@ -19,11 +20,16 @@ use App\Http\Controllers\Dashboard\Auth\AdminLoginController;
 
 
 
-Route::get('/', function () {
-    return view('dashboard.index');
-})->middleware(['auth:admin', 'verified'])->name('index');
+
+Route::middleware(['dashboard','auth:admin', 'verified'])->group(function () {
+    //---------------------------------------------------- dashboard
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
 
 
+
+    //---------------------------------------------------- Language
+    Route::get('/change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
+});
 
 
 //---------------------------------------------------- Auth

@@ -22,6 +22,11 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->appendToGroup('web', [
             SetLocale::class
         ]);
+
+        $middleware->appendToGroup('dashboard', [
+            'auth:admin',
+            SetLocale::class
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
