@@ -21,7 +21,7 @@ use App\Http\Controllers\Dashboard\Auth\AdminLoginController;
 
 
 
-Route::middleware(['dashboard','auth:admin', 'verified'])->group(function () {
+Route::middleware(['dashboard', 'auth:admin', 'verified'])->group(function () {
     //---------------------------------------------------- dashboard
     Route::get('/', [DashboardController::class, 'index'])->name('index');
 
@@ -30,6 +30,7 @@ Route::middleware(['dashboard','auth:admin', 'verified'])->group(function () {
     //---------------------------------------------------- Language
     Route::get('/change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
 });
+// dd(app()->getLocale());
 
 
 //---------------------------------------------------- Auth
