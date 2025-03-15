@@ -1,0 +1,39 @@
+<?php
+
+namespace {{ namespace }};
+
+{{ factoryImport }}
+use Illuminate\Database\Eloquent\Model;
+
+class {{ class }} extends Model
+{
+    //use HasFactory, Notifiable;
+
+    
+    /**
+     * The table associated with the model.
+     *
+     * @var string
+     */
+    protected $table = '';
+    
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+
+  
+    protected $fillable = ['id'];
+
+
+    ##--------------------------------- RELATIONSHIPS
+        // public function name(){
+          //  return $this->belongsTo();
+        //}
+
+    ##--------------------------------- ATTRIBUTES
+
+
+    ##--------------------------------- CUSTOM FUNCTIONS
+}

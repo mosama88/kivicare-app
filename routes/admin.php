@@ -6,8 +6,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\WebSite\HomeConterller;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\Auth\AdminLoginController;
-
-
+use App\Http\Controllers\Dashboard\SettingController;
 
 // Route::middleware('web')->name('home')->group(function () {
 //     Route::get('/', [HomeConterller::class, 'index'])->name('index');
@@ -25,7 +24,7 @@ Route::middleware(['dashboard', 'auth:admin', 'verified'])->group(function () {
     //---------------------------------------------------- dashboard
     Route::get('/', [DashboardController::class, 'index'])->name('index');
 
-
+    Route::resource('settings', SettingController::class);
 
     //---------------------------------------------------- Language
     Route::get('/change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
