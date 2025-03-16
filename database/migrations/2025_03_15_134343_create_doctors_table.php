@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
-            $table->string('name',50);
+            $table->string('name', 50);
             $table->string('email')->unique();
             $table->string('password');
             $table->string('phone_number')->nullable();
-            $table->text('bio')->nullable();
+            $table->text('bio')->nullable(); //السيرة الذاتية
             $table->text('about')->nullable();
             $table->integer('experience_years')->default(0);
             $table->foreignId('doctor_title_id')->nullable()->constrained()->nullOnDelete();
