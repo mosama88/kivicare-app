@@ -14,22 +14,27 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
-        Admin::factory(10)->create();
+        // User::factory(10)->create();
+        // Admin::factory(10)->create();
 
-        User::factory()->create([
-            'first_name' => 'Test',
-            'last_name' => 'User',
-            'mobile' => '01001145150',
-            'birth_date' => '2020-11-13',
-            'gender' => '1',
-            'email' => 'test@example.com',
-        ]);
+        // User::factory()->create([
+        //     'first_name' => 'Test',
+        //     'last_name' => 'User',
+        //     'mobile' => '01001145150',
+        //     'birth_date' => '2020-11-13',
+        //     'gender' => '1',
+        //     'email' => 'test@example.com',
+        // ]);
 
-        Admin::factory()->create([
-            'name' => 'Mohamed Osama',
-            'username' => 'mosama',
-            'email' => 'mosama@hotmail.com',
+        // Admin::factory()->create([
+        //     'name' => 'Mohamed Osama',
+        //     'username' => 'mosama',
+        //     'email' => 'mosama@hotmail.com',
+        // ]);
+
+
+        $this->call([
+            DoctorTitleSeeder::class,
         ]);
     }
 }
