@@ -21,8 +21,8 @@ Route::controller(DoctorTitleController::class)->prefix('doctor_titles')->group(
 
 Route::controller(CountryController::class)->prefix('countries')->group(function () {
     Route::get('/', 'index');
-    Route::get('/{countries}', 'show');
+    Route::get('/{country}', 'show');
     Route::post('/', 'store');
-    Route::put('/{countries}', 'edit');
-    Route::delete('/{countries}', 'destroy');
+    Route::put('/{country}', 'edit');
+    Route::delete('/{country}', 'destroy');
 });

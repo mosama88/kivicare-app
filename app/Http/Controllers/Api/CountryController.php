@@ -12,14 +12,12 @@ class CountryController extends Controller
     public function index()
     {
         $countries = Country::paginate(10);
-        return response()->json(['Countries' => CountryResource::collection($countries)], 204);
+        return response()->json(['Countries' => CountryResource::collection($countries)]);
     }
 
 
-    public function show(Country $countries)
+    public function show(Country $country)
     {
-        return response()->json(['Countries' => new CountryResource($countries)], 204);
+        return response()->json(['Country' => new CountryResource($country)]);
     }
-
-
 }
