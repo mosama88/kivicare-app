@@ -21,8 +21,17 @@ class DoctorTitleRequest extends FormRequest
      */
     public function rules(): array
     {
+        $doctorId = $this->route()->doctor_titles->id ?? null;
         return [
-            'doctor_title' => 'required|min:3,max:100|unique:doctor_titles,name',
+            'doctor_title' => 'required|min:3,max:100|unique:doctor_titles,name,' . $doctorId,
+        ];
+    }
+
+
+    public function messages()
+    {
+        return [
+            'doctor_title.required' => 'Doctor Title is Required',
         ];
     }
 }

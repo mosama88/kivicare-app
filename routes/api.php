@@ -13,5 +13,5 @@ Route::controller(DoctorTitleController::class)->prefix('doctor_titles')->group(
     Route::get('/{title}',  'show');
     Route::post('/', 'store');
     Route::put('/{title}',  'edit');
-    Route::delete('/',  'destroy');
+    Route::delete('/{title}',  'destroy');
 });
