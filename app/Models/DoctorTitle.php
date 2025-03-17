@@ -24,7 +24,7 @@ class DoctorTitle extends Model
    */
 
 
-  protected $fillable = ['id'];
+  protected $fillable = ['name'];
 
 
   ##--------------------------------- RELATIONSHIPS
