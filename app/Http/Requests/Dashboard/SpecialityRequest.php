@@ -11,7 +11,7 @@ class SpecialityRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -21,8 +21,11 @@ class SpecialityRequest extends FormRequest
      */
     public function rules(): array
     {
+
+        $specialityId = $this->route()->specialities->id ?? null;
+
         return [
-            //
+            'speciality_name' => 'required|min:3|max:100|unique:specialities,name,' . $specialityId,
         ];
     }
 }

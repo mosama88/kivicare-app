@@ -32,8 +32,8 @@ Route::controller(CountryController::class)->prefix('countries')->group(function
 
 Route::controller(SpecialityController::class)->prefix('specialities')->group(function () {
     Route::get('/', 'index');
-    Route::get('/{country}', 'show');
+    Route::get('/{speciality}', 'show');
     Route::post('/', 'store');
-    Route::put('/{country}', 'edit');
-    Route::delete('/{country}', 'destroy');
+    Route::put('/{speciality}', 'edit');
+    Route::delete('/{speciality}', 'destroy');
 });

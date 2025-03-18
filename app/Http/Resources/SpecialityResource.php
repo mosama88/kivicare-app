@@ -16,7 +16,7 @@ class SpecialityResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'Speciality Name' => $this->Speciality
+            'Speciality Name' => $this->name
         ];
     }
 }
