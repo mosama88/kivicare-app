@@ -16,7 +16,7 @@ class CountryController extends Controller
     public function index()
     {
         $countries = Country::paginate(10);
-        return response()->json(['Countries' => CountryResource::collection($countries)]);
+        return $this->apiSuccessResponse(CountryResource::collection($countries), "Data Retrived Succussefully", status: 200);
     }
 
     /**
@@ -25,8 +25,7 @@ class CountryController extends Controller
     public function store(CountryRequest $request)
     {
         $country = Country::create($this->mapRequestToCulomns($request->validated()));
-
-        return response()->json(['Country' => new CountryResource($country)]);
+        return $this->apiSuccessResponse(data: new CountryResource($country), message: "Created Successfully", status: 201);
     }
 
     /**
@@ -34,7 +33,7 @@ class CountryController extends Controller
      */
     public function show(Country $country)
     {
-        return response()->json(['Country' => new CountryResource($country)]);
+        return $this->apiSuccessResponse(data: new CountryResource($country), message: "Retrived Successfully", status: 200);
     }
 
     /**
