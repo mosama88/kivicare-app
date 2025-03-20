@@ -10,18 +10,18 @@ use App\Http\Requests\Dashboard\SpecialityRequest;
 
 class SpecialityController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
         $specialities = Speciality::paginate(10);
         return response()->json(['Speciality Data' => SpecialityResource::collection($specialities)]);
     }
 
-
-    public function show(Speciality $speciality)
-    {
-        return response()->json(['Speciality Data' => new SpecialityResource($speciality)]);
-    }
-
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(SpecialityRequest $request)
     {
 
@@ -29,14 +29,27 @@ class SpecialityController extends Controller
         return response()->json(['Speciality Data' => new SpecialityResource($speciality)], 201);
     }
 
-    public function edit(SpecialityRequest $request, Speciality $speciality)
+    /**
+     * Display the specified resource.
+     */
+    public function show(Speciality $speciality)
+    {
+        return response()->json(['Speciality Data' => new SpecialityResource($speciality)]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(SpecialityRequest $request, Speciality $speciality)
     {
 
         $speciality->update($this->mapRequestToCulomns($request->validated()));
         return response()->json(['Speciality Data' => new SpecialityResource($speciality)], 201);
     }
 
-
+    /**
+     * Remove the specified resource from storage.
+     */
     public function destroy(Speciality $speciality)
     {
 

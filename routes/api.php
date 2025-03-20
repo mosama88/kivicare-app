@@ -19,21 +19,5 @@ Route::controller(DoctorTitleController::class)->prefix('doctor_titles')->group(
 });
 
 
-
-Route::controller(CountryController::class)->prefix('countries')->group(function () {
-    Route::get('/', 'index');
-    Route::get('/{country}', 'show');
-    Route::post('/', 'store');
-    Route::put('/{country}', 'edit');
-    Route::delete('/{country}', 'destroy');
-});
-
-
-
-Route::controller(SpecialityController::class)->prefix('specialities')->group(function () {
-    Route::get('/', 'index');
-    Route::get('/{speciality}', 'show');
-    Route::post('/', 'store');
-    Route::put('/{speciality}', 'edit');
-    Route::delete('/{speciality}', 'destroy');
-});
+Route::apiResource('countries', CountryController::class);
+Route::apiResource('specialities', SpecialityController::class);
