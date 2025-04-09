@@ -5,18 +5,21 @@ namespace App\Http\Controllers\Api;
 use App\Models\Country;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Services\CountryService;
 use App\Http\Resources\CountryResource;
 use App\Http\Requests\Dashboard\CountryRequest;
 
 class CountryController extends Controller
 {
+
+    public function __construct(public CountryService $service) {}
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $countries = Country::paginate(10);
-        return $this->apiSuccessResponse(CountryResource::collection($countries), "Data Retrived Succussefully", status: 200);
+        return $this->apiSuccessResponse(CountryResource::collection($this->service->index()), "Data Retrived Succussefully", status: 200);
     }
 
     /**
@@ -24,36 +27,35 @@ class CountryController extends Controller
      */
     public function store(CountryRequest $request)
     {
-        $country = Country::create($this->mapRequestToCulomns($request->validated()));
-        return $this->apiSuccessResponse(data: new CountryResource($country), message: "Created Successfully", status: 201);
+        return $this->apiSuccessResponse(data: new CountryResource($this->service->store($this->mapRequestToCulomns($request->validated()))), message: "Created Successfully", status: 201);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Country $country)
+    public function show($id)
     {
-        return $this->apiSuccessResponse(data: new CountryResource($country), message: "Retrived Successfully", status: 200);
+        return $this->apiSuccessResponse(new CountryResource($this->service->show($id)), message: "Retrived Successfully", status: 200);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(CountryRequest $request, Country $country)
+    public function update(CountryRequest $request, $id)
     {
-        $country->update($this->mapRequestToCulomns($request->validated()));
 
-        return response()->json(['Country' => new CountryResource($country)], 204);
+        $this->service->update($id, $this->mapRequestToCulomns($request->validated()));
+        return response()->json([], 204);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Country $country)
+    public function destroy($id)
     {
-        $country->delete();
+        $this->service->destroy($id);
 
-        return response()->json(['Country' => new CountryResource($country)], 204);
+        return response()->json([], 204);
     }
 
     private function mapRequestToCulomns($data)
