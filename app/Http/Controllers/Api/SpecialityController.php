@@ -4,19 +4,23 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Speciality;
 use Illuminate\Http\Request;
+use App\Services\SpecialityService;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\SpecialityResource;
 use App\Http\Requests\Dashboard\SpecialityRequest;
 
 class SpecialityController extends Controller
 {
+
+    public function __construct(public SpecialityService $service) {}
+
+
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $specialities = Speciality::paginate(10);
-        return response()->json(['Speciality Data' => SpecialityResource::collection($specialities)]);
+        return response()->json(['Speciality Data' => SpecialityResource::collection($this->service->index())]);
     }
 
     /**
