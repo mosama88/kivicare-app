@@ -3,12 +3,12 @@
 namespace App\Services;
 
 use App\Models\Country;
-use App\Repositories\CountryRepository;
+use App\Repositories\Interfaces\CountryInterface;
 
 class CountryService
 {
 
-    public function __construct(public CountryRepository $repo) {}
+    public function __construct(public CountryInterface $repo) {}
 
     public function index()
     {

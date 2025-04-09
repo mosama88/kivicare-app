@@ -8,6 +8,7 @@ use App\Repositories\Interfaces\SpecialityInterface;
 class SpecialityRepository implements SpecialityInterface
 {
 
+
     /**
      * Display a listing of the resource.
      */

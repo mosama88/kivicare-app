@@ -2,14 +2,14 @@
 
 namespace App\Services;
 
-use App\Repositories\SpecialityRepository;
+use App\Repositories\Interfaces\SpecialityInterface;
 
 
 
 class SpecialityService
 {
 
-    public function __construct(public SpecialityRepository $speciality) {}
+    public function __construct(public SpecialityInterface $speciality) {}
 
     /**
      * Display a listing of the resource.
