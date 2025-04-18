@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
+
+
+
 abstract class Controller
 {
     public function apiSuccessResponse($data = null, $message = null, $status = 200)
@@ -11,6 +15,6 @@ abstract class Controller
             'message' => $message,
             'data' => $data,
         ];
-        return response()->json($response, $status);  
+        return response()->json($response, $status);
     }
 }

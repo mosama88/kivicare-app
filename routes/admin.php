@@ -15,6 +15,7 @@ use App\Http\Controllers\Dashboard\SettingController;
 //     Route::get('change-language/{lang}', [LanguageController::class, 'changeLanguage'])->name('change.language');
 // });
 
+var_dump("fifth Step => <h6 class='text-danger'>" . realpath(__DIR__) . '\\' . basename(__FILE__) . "</h6>   ||| ");
 
 
 
